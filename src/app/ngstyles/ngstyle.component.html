@@ -1,0 +1,29 @@
+<div class="ui input">
+  <input type="text" name="color" value="{{colorinput}}" #ccoolorinput>
+    </div>
+
+<div class="ui input">
+   <input type="text" name="fontSize" value="{{textinput}}" #fontinput>
+</div>
+
+<h4 class="ui horizontal divider header">
+ ngStyle with object property from variable
+ </h4>
+
+ <div>
+    <span [ngStyle]="{color: colorinput, fontSize :textinput}">
+      {{ colorinput }} text
+   </span>
+ </div>
+<h4 class="ui horizontal divider header">
+   style from variable
+</h4>
+
+<div [style.background-color]="colorinput"
+ style="color: white;">
+ {{ colorinput }} background
+</div>
+
+<button (click)="addColor(ccoolorinput,fontinput)">
+            Submit color
+   </button>

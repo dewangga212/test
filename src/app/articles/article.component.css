@@ -1,0 +1,13 @@
+.votes.count{
+    float: left;
+    clear: none;
+    width: 20%;
+    margin-right: 1%;
+}
+.ui.statistic{
+    align-items: center;
+    background-color: #D7DBDD;
+    padding: 15px;
+    width: 100%;
+}
+
